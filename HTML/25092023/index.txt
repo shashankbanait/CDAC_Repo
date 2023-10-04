@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>It's my website</title>
+		
+	</head>
+
+	<body>
+		<p>This is Shashank.................</p>
+		<b>Hello this b tag</b>
+		<i>Hello this is i tag</i>
+		<u>Hello this is u tag</u>
+
+		<p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit. Perspiciatis repudiandae</mark> eaque quaerat<small> fugit nisi porro nobis odit, ullam <small>eligendi excepturi autem. Temporibus ipsum </small></small>repellendus suscipit laboriosam illo accusantium saepe. Hic doloribus sit reiciendis quisquam!</p>
+		
+	</body>
+
+</html>

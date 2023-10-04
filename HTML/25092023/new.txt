@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>It's my website</title>
+		
+	</head>
+
+	<body>
+        
+		<b>Hello this b tag</b>
+        <br>
+		<i>Hello this is i tag</i>
+        <br>
+		<u>Hello this is u tag</u>
+        <br>
+        <p style>Lorem, ipsum <article>dolor sit amet consectetur adipisicing elit. </article>Ratione velit dignissimos impedit quo deserunt itaque doloribus fuga quibusdam laudantium, debitis laboriosam, dicta accusamus!</p>
+    
+		
+	</body>
+
+</html>
