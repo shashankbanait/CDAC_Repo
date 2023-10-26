@@ -14,5 +14,6 @@ public class QuestionTwo {
 
         System.out.println(q);
         
+        
     }
 }
