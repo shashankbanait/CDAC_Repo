@@ -7,12 +7,21 @@ import java.util.HashMap;
 
 public class QuestionOne{
     public static void main(String[] args) {
-        HashMap<Integer, String> populationMap = new HashMap<>();
-        populationMap.put(1, "Nagpur");
-        populationMap.put(2, "Pune");
-        populationMap.put(3, "Mumbai");
-        populationMap.put(4, "Delhi");
+        HashMap<String, Integer> populationMap = new HashMap<>();
+        populationMap.put("Nagpur", 534);
+        populationMap.put("Pune", 362);
+        populationMap.put("Mumbai", 767);
+        populationMap.put("Delhi", 876);
 
-        for(Integer i : .values())        
+        for(String i: populationMap.keySet()){
+            Integer val = populationMap.get(i);
+            System.out.println("City: " + i + " Population: " + val);
+        }
+
+        for (Integer v : populationMap.values()) {
+            System.out.println("Population: " + v);
+        }
+
+
     }
 }
