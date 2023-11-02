@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
-public class QuestionTwo {
+public class QuestionTwo        
+ {
 
     public static <T> void exchangeElements(T[] array, int firstIndex, int secondIndex) {
         if (firstIndex < 0 || firstIndex >= array.length || secondIndex < 0 || secondIndex >= array.length) {
