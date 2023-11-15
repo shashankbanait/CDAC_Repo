@@ -59,3 +59,4 @@ delimiter ;
 update user set email="ramesh@gmail.com" where id=1;
 select * from audit_log;
 select * from user;
+
