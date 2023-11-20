@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setName(){
+            var name = document.getElementById("name").value 
+            document.getElementById("finalName").value = name
+        }
+    </script>
+</head>
+<body>
+    <input placeholder="Enter a name" id = "name">
+    <button onclick="setName()">Set to</button>
+    <input type="Auto set name" id = "finalName">
+</body>
+</html>
