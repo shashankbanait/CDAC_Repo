@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        #BodyWork {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <script>
+        function checkCredentials() {
+            var enteredUsername = document.querySelector('input[type="text"]').value;
+            var enteredPassword = document.querySelector('#password1').value;
+
+            // Replace these with your actual username and password
+            var correctUsername = 'om';
+            var correctPassword = 'om';
+
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+                alert('Password matches successfully!');
+            } else {
+                alert('Incorrect username or password. Please try again.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="BodyWork">
+        <h1>Login Page</h1>
+        <input type="text" placeholder="Enter email">
+        <br><br>
+        <input type="password" id="password1" placeholder="Enter password">
+        <br><br>
+        <button onclick="">Submit</button>
+    </div>
+</body>
+
+</html>

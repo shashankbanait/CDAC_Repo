@@ -1,0 +1,14 @@
+
+There are two functions in JSON
+1. parse()
+2. stringify()
+
+JSON.parse() => json => array-object        // matlab json se array of object
+JSON.stringify() => array-object => json    // array of object se json me convert karega
+
+
+localStorage setItem(key, value)
+            getItem(key)    // it will return value
+            removeItem(key) // it will remove value
+            clear()     // clear all localStorage data
+                                        
