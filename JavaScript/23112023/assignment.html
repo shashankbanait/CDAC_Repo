@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function saveUser(){
+            const name = document.getElementById("name");
+            const age = document.getElementById("age");
+            const mobilel = document.getElementById("mobile");
+
+            const user = {name, age, mobile};
+
+            let userJSON = localStorage.getItem("user")
+            if(userJSON != null){
+                const arrUser = JSON.parse(userJSON)
+            }
+            else{
+                localStorage.setItem("user", JSON.stringify([]))
+            }
+            
+            arrUser.push(user)
+
+            localStorage.setItem("user", JSON.stringify(arrUser))
+
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

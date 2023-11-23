@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        function Car(cname, model, year, company) {
+            this.cname = cname;
+            this.model = model;
+            this.year = year;
+            this.company = company;
+
+            this.setName = function (cname) {
+                this.cname = cname;
+            }
+            this.getName = function () {
+                return this.name;
+            }
+        }
+
+        c1 = new Car("mycar", "eon", 2023, "hyundai");
+        c2 = new Car("mynew", "x1", 2023, "bmw");
+
+        console.log(c1);
+        console.log(c2);
+    </Script>
+
+</head>
+
+<body>
+    <h1>This is homepage</h1>
+</body>
+
+</html>

@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
     <style>
-        *
-        {
+        * {
             margin: 0;
             padding: 0;
 
         }
+
         table,
         tr,
         td,
@@ -26,119 +25,147 @@
             padding: 10px;
             border-radius: 5%;
             width: 29vw;
-
-
         }
 
         .box {
-            background-color: rgb(206, 101, 255);
+            background-color: rgb(101, 255, 214);
             padding: 10px 0;
             width: 32vw;
-            margin : auto;
-            
+            margin: auto;
+
         }
+       
     </style>
+    <Script>
+
+        function register(event) {
+            event.preventDefault()
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let mobile = document.getElementById("mobile").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let cpassword = document.getElementById("cpassword").value;
+            //let gender = document.querySelector('input[name="Gender"]:checked').value;
+            //let gender = document.getElementById("").value;
+            let city = document.getElementsByName("City").value;
+            let address = document.getElementById("address").value;
+            let agree = document.getElementById("agree").checked;
+            let gender = ""
+            if (male.checked == true) {
+                gender = male.value
+            } else if (female.checked == true) {
+                gender = female.value
+            }
+            const person = {
+                name, age, email, password, gender, city, mobile, address
+            }
+            if (password == cpassword && agree == true) {
+                localStorage.setItem("person", JSON.stringify(person))
+            }
+            else {
+                alert("Password not match")
+            }
+            // location="welcome.html"
+        }
+    </Script>
 </head>
 
 <body>
     <div class="box">
-        <form method="get" action="welcome.html" autocomplete="off">
-            <table width="">
+
+        <form method="get" onsubmit="register(event)" action="welcome.html">
+            <table>
                 <thead>
                     <tr>
-                        <th colspan="2"> Register Here</th>
+                        <th colspan="2">Register Here</th>
                     </tr>
                 </thead>
 
                 <tr>
-                    <td>Name</td>
+                    <td> Name</td>
                     <td>
-                        <input type="text" name="name" required />
+                        <input type="text" name="name" id="name" required>
                     </td>
                 </tr>
                 <tr>
                     <td>Age</td>
                     <td>
-                        <input type="text" name="age" min="1" required />
+                        <input type="number" name="number" id="age" min="1" max="150">
                     </td>
                 </tr>
                 <tr>
                     <td>Mobile No.</td>
                     <td>
-                        <input type="tel" name="mobile" required />
+                        <input type="tel" id="mobile" name="mobile">
                     </td>
                 </tr>
                 <tr>
-                    <td>Email.</td>
+                    <td>Email</td>
                     <td>
-                        <input type="email" name="email" required />
+                        <input type="email" id="email" name="email" min="1" max="150" required>
                     </td>
                 </tr>
                 <tr>
                     <td>Password</td>
                     <td>
-                        <input type="password" name="cpassword" required />
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Confirm Password</td>
+                    <td>
+                        <input type="password" id="cpassword" name="cpassword" required>
                     </td>
                 </tr>
                 <tr>
                     <td>Gender</td>
                     <td>
-                        Male : <input type="radio" name="gender" required />
-                        Female : <input type="radio" name="gender" />
-
+                        Mail :<input type="radio" id="male" name="Gender" value="male" checked>
+                        Female : <input type="radio" id="female" name="Gender" value="female">
                     </td>
                 </tr>
                 <tr>
                     <td>City</td>
                     <td>
-                        <select name="city" required>
-                            <option value="">Select City</option>
-                            <option selected value="ngp">Nagpur</option>
-                            <option value="nsk">Nashik</option>
-                            <option value="pune">Pune</option>
-                            <option value="cst">Mumbai</option>
+                        <select name="City">
+                            <option value=="">Select city</option>
+                            <option value=="gon">Gondia</option>
+                            <option value=="ngp">Nagpur</option>
+                            <option value=="mum">Mumbai</option>
+                            <option value=="Pun">Pune</option>
+                            <option value=="Sut">Surat</option>
                         </select>
-
                     </td>
                 </tr>
                 <tr>
                     <td>Address</td>
                     <td>
-                        <textarea name="address" rows="10" cols="30"> </textarea>
-
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
                     </td>
                 </tr>
                 <tr>
                     <th colspan="2">
-                        <input type="submit" value="Register" />
-                        <button type="reset"> Reset </button>
+                        I agree: <input type="checkbox" value="iagree" id="agree">
+                    </th>
+                    <th>
 
                     </th>
+                </tr>
+                <tr id="subres">
+                    <td>
+                        <input type="submit" value="Register">
+                        <button type="reset">Clear</button>
+                    </td>
                 </tr>
 
                 <tfoot>
-                    <th colspan="2">Bhrde bhai form</th>
+                    <th colspan="2"> Last submit time : 10:00 PM</th>
                 </tfoot>
-
-                <tr>
-                    <th colspan="2">
-                        <input type="checkbox" value="ignore"> 
-                        <a href="">terms and condition</a> 
-
-                    </th>
-                   
-                </tr>
-
-
-
-
-
-
             </table>
+
         </form>
     </div>
-
-
 </body>
 
 </html>

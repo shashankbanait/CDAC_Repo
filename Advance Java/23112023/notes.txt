@@ -1,0 +1,44 @@
+
+of completion of any task, but we need to manage session by web application
+
+Session management: 
+since web application uses http protocol and by default this protocol is stateless protocol.
+it means it does not maintain the state of client, so for maintaining the state of client,
+we need to manage the session
+
+1) URL rewriting    ---
+2) Hidden field         |       these three are client side
+3) cookies        ----- |
+4) session API                  // this is server side
+
+
+difference between cookies and session API
+cookies 1
+it is a browser facility and it works on clint size
+
+session 1
+it works on server side
+
+cookies 2
+limited data can be store in cookies- 4kb
+
+session 2
+unlimited data
+
+cookies 3
+less secure
+
+session 3
+more secure
+
+cookies 4
+performance wise faster
+
+session 4
+it is slower
+
+
+***************************************
+there are two types of cookies
+1. persistent cookies
+2. temporary cookies

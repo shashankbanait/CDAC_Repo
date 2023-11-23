@@ -1,0 +1,9 @@
+Forward method : it is the method of requestDispatcher interface which is responsible to produce response of final servlet to the client
+
+include method : it is the method of requestDispatcher which is responsible to produce response of all the sevlets to the client
+
+note: both the methods work for more than one servlet communication within the application
+*************************************************************************************************************
+servlet context: it is globally defined for the application and responsible to provide information which it contain to all servlets of the application
+
+servlet config: each servlet of the application have their own servlet config and which is responsible to provide information to particular servlet only
