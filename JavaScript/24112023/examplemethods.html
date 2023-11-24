@@ -1,0 +1,52 @@
+<script>
+    let arr = [4, 6, 2, 121, 3446, 46, 1123, 7]
+
+    // array me kisi number ke baad koi new number add karna hota hai to iska use karte hai
+    // array.splice(index, remove-count, values-1, value-2,............)
+
+    // array.splice(2, 0, 25);
+    // console.log(arr);
+
+    arr.splice(4, 1, 2446);
+
+    console.log(arr)
+
+    arr.splice(arr.length - 1, 0, 77, 44, 23, 342, 2333);
+    console.log(arr);
+
+    console.log(arr.slice(2, 6))
+
+    console.log("77 index", arr.indexOf(77));
+    console.log(" 77 index", arr.indexOf(77, 8))
+    // indexOf(item, offset)   // offset means search from index by default 0
+
+    // 2d array
+    let twoDArray = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12]
+    ];
+
+    console.log(arr);
+    const rowSize = twoDArray.length;
+    const colSize = arr[0].length;
+    console.log(rowSize, "x", colSize)
+
+    console.log(twoDArray[3][1])
+
+    twoDArray.forEach(function(r){
+        r.forEach(function(e){
+            console.log(e);
+        })
+    })
+
+    console.log("*********************************************")
+
+    for(r=0; r<twoDArray.length; r++){
+        for(c=0; c<twoDArray.length; c++){
+            console.log([r][c])
+        }
+    }
+    
+    console.table(twoDArray);
+</script>

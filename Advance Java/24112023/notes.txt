@@ -1,0 +1,57 @@
+Tags of jsp
+1) Comments
+<%--          Comments      --%>
+
+2) Declarative Tag 
+<%!     instance variables and user defined methods has to declare between these tags                       %>
+
+3) Scriptlet tag
+<%        isme har vo chiz likh sakte hai jo hum service method, ya doGet() method, ya doPost() method() ke andar ki chize       %>
+// code which we want to write in service() method
+
+
+4) Expression tag
+<%=     it is the substitute of out.println()                 %>
+
+
+
+// implicit objects
+in jsp some frequently used objects are created implicitly at the time of parsing from jst to servlet so that there is no need to create these objects explicitly user can directly use a implicit object 
+out                     ->  JSPWriter
+request                 -> HttpServletRequest
+response                -> HttpServletResponse
+application             -> ServletConfig
+config                  -> ServletContext
+session                 
+page
+pageContext
+exception
+
+****************************************************************
+
+
+JSP Directive
+Attribute of page Directive:
+
+import
+extends
+language
+session
+contentType
+page encoding
+errorPage
+isErrorPage
+buffer
+autoflush
+isthreadsafe
+isElignore
+info
+
+note: autoflush by default true hota hai
+buffer by default 8 kb hota hai
+isElignore by default false hota hai
+isErrorPage by default false hota hai
+isthreadsafe by default true hoti hai
+language by default java hoti hai
+session by default true hota hai
+*******************************************************************
