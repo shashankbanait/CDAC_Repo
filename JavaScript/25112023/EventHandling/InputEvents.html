@@ -1,0 +1,36 @@
+<script>
+    function onchangewalafunction(inputBox){
+        console.log(Math.sqrt(parseInt(inputBox.value)))
+    }
+
+    function funChange(dropDown){
+        alert(dropDown.value)
+    }
+
+
+    function isChecked(checkbox){
+        // alert(checkbox.checked + "________" + checkbox.value)
+        let btn = document.querySelector("#btn");
+        if(checkbox.checked){
+            btn.disabled = false;
+            btn.style.backgroundColor="green";
+            btn.innerHTML="checked";
+        }
+        else{
+            btn.disabled = true;
+            btn.style.backgroundColor="red";
+            btn.innerHTML="please check it";
+        }
+    }
+</script>
+
+<input type="number" onchange="onchangewalafunction(this)">
+
+<select onchange="funChange(this)" multiple>
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+</select>
+
+Check me: <input type="checkbox" onchange="isChecked(this)" value="Hello">
+<button id="btn" style="color:white;">Checked</button>
