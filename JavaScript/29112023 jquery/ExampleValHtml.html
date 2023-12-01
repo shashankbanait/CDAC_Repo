@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#comment").val("consectetur dignissimos illo facere, placeat laboriosam sed assumen")
+            $("#comment").html("consectetur dignissimos illo facere, placeat laboriosam sed assumen")
+            $("#btnComment").click(function () {
+                alert($("#comment").val())
+            })
+
+            $("#btnComment").click(function () {
+                alert($("#divComment").html())
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div style="height: 200px; 
+                width: 400px; 
+                border: 4px solid red; " 
+            contenteditable="true" id="divComment"></div>
+
+
+
+    <button id="btnDivComment">Add Div Comment</button>
+
+    <hr>
+    <textarea id="comment" placeholder="Enter badiya comment">
+
+    </textarea>
+    <button id="btnComment">Add Comment</button>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="./jquery-3.7.1.min.js"></script>
+
+    <style>
+        #main {
+            display: flex;
+        }
+ 
+        #vm{
+            height: 100px;
+        }
+        .box {
+            border: 1px solid red;
+            height: 400px;
+            width: 400px;
+            margin-left: 30px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#onbutton").click(function () {
+               
+                var selectedDiv = $("#selectDiv").val();
+                var selectedImage = $("#selectImage").val();
+
+                
+                $("#" + selectedDiv).css('background-image','url(' + selectedImage + ')');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div id="main">
+        <div class="box" id="div1"></div>
+        <div class="box" id="div2"></div>
+        <div class="box" id="div3"></div>
+    </div>
+  
+    <br>
+    <br>
+    <button id="onbutton">button</button>
+    <br>
+    <br>
+
+        <select name="div" id="selectDiv" style="margin-left: 30px;">
+        <option value="">Select any div</option>
+        <option value="div1" id="op1">div1</option>
+        <option value="div2" id="op2">div2</option>
+        <option value="div3" id="op3">div3</option>
+    </select>
+
+    
+    <select name="image" id="selectImage" style="margin-left: 30px;">
+        <option value="">Select any pic</option>
+        <option value="King.jpg " id="vm" style="height: 50px; width: 50px;">King</option>
+        <option value="queen.jpg" id="sd">Queen</option>
+        <option value="jack.jpg" id="ab">Jack</option>
+    </select>
+
+    
+</body>
+</html>

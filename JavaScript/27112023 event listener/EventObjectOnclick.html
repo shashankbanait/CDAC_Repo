@@ -1,0 +1,20 @@
+<script>
+    var count = 0;
+    function countScrolls()
+    function show(e){
+        console.log(e.target.disabled);
+        console.log(e.target.value);
+    }
+
+    function inDecVal(e, ele){
+        if(e.deltaY < 0){
+            ele.value = --count;
+        }
+        else{
+            ele.value = ++count;
+        }
+    }
+
+</script>
+<button onclick="show(event)" value="Show">Show</button>
+<input type="number" onwh>

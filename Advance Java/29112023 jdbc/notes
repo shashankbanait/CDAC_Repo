@@ -1,0 +1,13 @@
+driver
+it is a software implementation which is responsible to establish communication 
+between two differenct entities.
+
+
+Pahle humare paas 4 prakar ke driver the
+1) JDBC - ODBC Bridge driver
+2) native api driver
+3) netProtocol driver
+4) thin driver
+
+Steps to extablish the connectivity
+step-1 -> Loading the driver
