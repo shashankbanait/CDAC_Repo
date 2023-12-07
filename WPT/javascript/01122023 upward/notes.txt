@@ -1,0 +1,10 @@
+what we have to learn
+agar javascript ke through kar rhe hai to ye class use karna padega: 
+
+XMLHttpRequest javascript
+
+fetch() javascript (promises)
+
+$.ajax() jquery
+
+react axios() (promises)

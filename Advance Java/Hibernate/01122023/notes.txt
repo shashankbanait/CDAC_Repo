@@ -1,0 +1,15 @@
+Framework: it is the bundle of classes, interfaces, libraries and configuration files which facilitates to create an application
+with higher security, performance and efficient memory management. It is prefferable to use Framework for huge application
+
+Hibernate: it is the java Framework which provide strong ORM (object relational mapping) services, it is the extension of JDBC
+Features: 
+1) transparent persistency: 
+2) generate schema / table automatically
+3) it generate primary key automatically
+4) it enhance memory management
+5) it enhances performance
+6) it supports scalability
+7) it uses query language independent to database
+8) it is industrial reliable
+9) it supports transection management
+10) it uses connection pooling

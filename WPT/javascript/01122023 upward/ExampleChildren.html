@@ -10,16 +10,23 @@
             padding: 30px;
             border: 1px solid black;
         }
+        button{
+            border-radius: 30px;
+            background-color: blue;
+            color: aliceblue;
+            padding: 20px;
+        }
     </style>
     <script>
         $(document).ready(function(){
-            $("span").parents().css({"border":"5px palevioletred solid"})
+            $(".div1").children().css({"border":"5px green solid"})         // direct children 
+            // .div2 and p will select
         })
     </script>
 </head>
 <body>
     <pre>
-        upward => parent(), parents(), parentUntil()
+        downward => children() find()
     </pre>
 
     <div class="div1">
