@@ -4,8 +4,10 @@
 //import EModuleCss from './EModuleCss';
 // import EUseEffect from './EUseEffect';
 // import { EUseRef } from './EUseRef';
+// import { CounterExample } from './Examples/CounterExample'
 import './Main.css'
-import { ExampleMemo } from './UseMemoExample/ExampleMemo'
+import { CounterApp } from './ExampleReduxToolkit/Counter/CounterApp'
+// import { ExampleMemo } from './UseMemoExample/ExampleMemo'
 // import Component1 from './UseComponent/Component1';
 // import { TableComp } from './Examples/TableComp';
 // import Component2 from './UseComponent/Component2';
@@ -36,7 +38,9 @@ function Main() {
         <div className='p-5 '>
             {/* <Component1 /> */}
             {/* <TableComp/> */}
-            <ExampleMemo/>
+            {/* <ExampleMemo/> */}
+            <CounterApp/>
+            {/* <CounterExample/> */}
             {/* <Component2 />
             <Component3 />
             <Component4 /> */}
